@@ -1,3 +1,2 @@
 mkdocs==1.6.1, <2 # this exact version or at least less that version 2
 # pip will talk to PyPI and install the latest version of mkdocs. tell pip exactly which version of mkdocs to install
-got 
