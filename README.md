@@ -10,4 +10,15 @@ mkdocs serve
 ```
 
 ## Dependencies
-- installing dependencies like MKDocs via pip
+First install the virtual environment:
+```
+python3 -m venv .venv
+```
+Then activate it:
+```
+source .venvbin/activate
+```
+Then install dependencies:
+```
+pip install mkdocs
+```
