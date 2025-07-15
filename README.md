@@ -22,3 +22,15 @@ Then install dependencies:
 ```
 pip install mkdocs
 ```
+
+Or instead use [uv](https://docs.astral.sh/uv/) for comprehensive project management. Dependency bounds are defined in [`pyproject.toml`](pyproject.toml) and the locked environment is specified in [`uv lock`](uv.lock). 
+To create the virtual environment from lockfile, and install the dependencies inside a virtual environement using [venv](https://docs./python.org/3/library/venv.), make sure you have installed uv and run html, run:
+```
+uv sync
+```
+
+### Documentation 
+This repositiry uses [MKDocs](https://www.mkdocs.org) to generate static documentation site for users. The source files for the site can be fouind in the [`docs`](docs) directory and site configuration in [`mkdocs.yml`](mkdocs.yml). TO serve the site locally, run: 
+```
+uv run mkdocs serve
+```
