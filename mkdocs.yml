@@ -1,1 +1,4 @@
 site_name: Julia's Docs
+nav:
+  - Start here: 'index.md'
+  - Aviation model: 'aviation.md'
