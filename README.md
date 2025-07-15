@@ -30,7 +30,7 @@ uv sync
 ```
 
 ### Documentation 
-This repositiry uses [MKDocs](https://www.mkdocs.org) to generate static documentation site for users. The source files for the site can be fouind in the [`docs`](docs) directory and site configuration in [`mkdocs.yml`](mkdocs.yml). TO serve the site locally, run: 
+This repositiry uses [MKDocs](https://www.mkdocs.org) to generate static documentation site for users. The source files for the site can be fouind in the [`docs`](docs) directory and site configuration in [`mkdocs.yml`](mkdocs.yml). To serve the site locally, run: 
 ```
 uv run mkdocs serve
 ```
