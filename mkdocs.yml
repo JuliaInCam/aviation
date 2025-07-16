@@ -1,4 +1,7 @@
-site_name: Julia's Docs
+site_name: Aviation
+site_url:
+theme:
+  name: material
 nav:
-  - Start here: 'index.md'
+  - Home: 'index.md'
   - Aviation model: 'aviation.md'
