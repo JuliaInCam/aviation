@@ -14,17 +14,21 @@ The "required global fleet" can be estimated using a very simple model that assu
 
 | Inputs | Value | Unit     | Source |
 | :---   | :---  |   :---   |  :---  |
-| passengers per year  | $5 \times 10^9$   | $\text{year}^{-1}$ | ATAG[^1] |
-|  seats per aircraft | $150$   | . |  |
-|  flights per aircraft per day  | $2$   | $\text{day}^{-1}$ |  |
+| passengers per year  | 5 $\times$ 10^9^   | year^-1^ | ATAG^[1]^ |
+|  seats per aircraft | 150   | . |  |
+|  flights per aircraft per day  | 2   | day^-1^ |  |
 
 ## Equations
 Given that the two sources inputs that are time dependent are given in different time bases, it is convenient to convert one of these two are consistent.
 
-$\text{passsengers per day} = \frac{\text{passengers per year}}{\text{days per year}}$
+$$
+\text{passsengers per day} = \frac{\text{passengers per year}}{\text{days per year}}
+$$
 
 The total required global fleet can then be calcualted as a function of this intermediate value and the other inputs.
 
-$\text{required global fleet} = \frac{\text{passengers per day}}{\text{seats per aircraft } \times \text{ flights per aircraft per day}}$
+$$
+\text{required global fleet} = \frac{\text{passengers per day}}{\text{seats per aircraft } \times \text{ flights per aircraft per day}}
+$$
 
-[^1]: Reference 
+[^1]: https://atag.org/facts-figures#:~:text=In%202023%2C%2035.3%20million%20scheduled,some%2096%20million%20aircraft%20movements.&text=8.17%20trillion%20Revenue%20Passenger%20Kilometres,flown%20by%20passengers%20in%202023.&text=61.4%20million%20tonnes%20of%20cargo%20were%20carried%20by%20air%20in%202023. 
