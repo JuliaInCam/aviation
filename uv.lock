@@ -12,6 +12,7 @@ dependencies = [
 
 [package.dev-dependencies]
 docs = [
+    { name = "mkdocs-bibtex" },
     { name = "mkdocs-material" },
 ]
 
@@ -19,7 +20,10 @@ docs = [
 requires-dist = [{ name = "mkdocs-bibtex", specifier = ">=4.4.0" }]
 
 [package.metadata.requires-dev]
-docs = [{ name = "mkdocs-material", specifier = ">=9.6.15" }]
+docs = [
+    { name = "mkdocs-bibtex", specifier = ">=4.4.0" },
+    { name = "mkdocs-material", specifier = ">=9.6.15" },
+]
 
 [[package]]
 name = "babel"
