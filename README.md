@@ -9,6 +9,12 @@ Learn the fundamentals of transform-based low-order modelling and analysis.
 mkdocs serve
 ```
 
+### Model/Analysis
+This repository contains a single analysis script, [aviation.py](aviation.py), which implements the simple model for global aviation. It outputs the required global fleet. To executre the analysis script, run:
+```
+uv run python aviation.py
+```
+
 ## Dependencies
 First install the virtual environment:
 ```
