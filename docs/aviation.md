@@ -14,7 +14,7 @@ The "required global fleet" can be estimated using a very simple model that assu
 
 | Inputs | Value | Unit     | Source |
 | :---   | :---  |   :---   |  :---  |
-| passengers per year  | 5 $\times$ 10^9^   | year^-1^ | ATAG^[1]^ |
+| passengers per year  | 5 $\times$ 10^9^   | year^-1^ | ATAG^[@atagFactsFigures]^ |
 |  seats per aircraft | 150   | . |  |
 |  flights per aircraft per day  | 2   | day^-1^ |  |
 
@@ -33,5 +33,3 @@ $$
 \label{equation:required-global-fleet}
 \end{equation}
 $$
-
-[^1]: https://atag.org/facts-figures#:~:text=In%202023%2C%2035.3%20million%20scheduled,some%2096%20million%20aircraft%20movements.&text=8.17%20trillion%20Revenue%20Passenger%20Kilometres,flown%20by%20passengers%20in%202023.&text=61.4%20million%20tonnes%20of%20cargo%20were%20carried%20by%20air%20in%202023. 

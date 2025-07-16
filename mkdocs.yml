@@ -9,9 +9,16 @@ nav:
 markdown_extensions:
   - pymdownx.caret
   - pymdownx.tilde
+  - footnotes
   - pymdownx.arithmatex:
       generic: true
 
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - bibtex:
+      bib_file: "https://api.zotero.org/groups/5782724/collections/G847TDER/items?format=bibtex" #items within a specific collection in the AIA library
+
