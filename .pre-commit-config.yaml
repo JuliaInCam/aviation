@@ -13,3 +13,10 @@ repos:
       - id: mixed-line-ending
         args: ["--fix=lf"]
       - id: check-toml
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.12.3
+    hooks:
+      - id: ruff-check # Run the linter.
+        args: [--fix]
+      - id: ruff-format # Run the formatter.
