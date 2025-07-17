@@ -1,8 +1,8 @@
 def passengers_per_day(passengers_per_year, days_per_year): 
     return passengers_per_year / days_per_year
 
-def required_global_fleet(seats_per_aricraft, flights_per_aircraft_per_day): #this function should take output of the prev funciton as a variable
-    return passengers_per_day / (seats_per_aricraft * flights_per_aircraft_per_day)
+def required_global_fleet(passengers_per_day, seats_per_aircraft, flights_per_aircraft_per_day): #this function should take output of the prev funciton as a variable
+    return passengers_per_day / (seats_per_aircraft * flights_per_aircraft_per_day)
 
 # required_global_fleet(150.0, 2.0,)
 
