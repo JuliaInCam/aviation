@@ -1,6 +1,6 @@
 
 #from aviation import passengers_per_day, required_global_fleet
-import aviation #as a module
+import src.aviation.aviation as aviation #as a module
 
 days_per_year = 365
 passengers_per_year = 5_000_000_000.0
