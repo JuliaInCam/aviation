@@ -9,6 +9,9 @@ dependencies = [
 ]
 
 [dependency-groups]
+dev = [
+    "ruff>=0.12.3",
+]
 docs = [
     "mkdocs-bibtex>=4.4.0",
     "mkdocs-material>=9.6.15",
@@ -16,7 +19,6 @@ docs = [
 
 [tool.uv]
 default-groups = ["docs"]
-
 
 [build-system]
 requires = ["uv_build>=0.7.21,<0.8.0"]
