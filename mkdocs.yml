@@ -3,8 +3,8 @@ site_url:
 theme:
   name: material
 nav:
-  - Home: 'index.md'
-  - Aviation model: 'aviation.md'
+  - Home: "index.md"
+  - Aviation model: "aviation.md"
 
 markdown_extensions:
   - pymdownx.caret

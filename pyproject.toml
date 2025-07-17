@@ -27,15 +27,17 @@ default-groups = ["dev", "docs"]
 
 [tool.ruff.lint]
 select = [
-    ""B",
+    "B",
     "E",
     "F",
     "I",
     "N",
     "SIM",
     "T",
-    "UP""
+    "UP"
 ]
+
+ignore = ["E501", "T201"]
 
 [tool.ruff.lint.per-file-ignores]
 "!src/**.py" = ["D"]

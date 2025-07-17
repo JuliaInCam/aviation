@@ -13,6 +13,4 @@ required_global_fleet = aviation.required_global_fleet(
     passengers_per_day, seats_per_aircraft, flights_per_aircraft_per_day
 )
 
-print(
-    f"{required_global_fleet=:.2f}"
-)  # format string syntax, will output variable_name=value
+print(f"{required_global_fleet=:.2f}")  # format string syntax, will output variable_name=value
