@@ -1,26 +1,31 @@
 """Modelling of the global fleet based on average passenger and aircraft data."""
 
 
-def passengers_per_day(passengers_per_year, days_per_year):
+def passengers_per_day(passengers_per_year: float, days_per_year: float) -> float:
     """The number of passegers per day globally.
 
     Args:
-        passengers_per_year (float): The number of pasengers flying per year globally
-        days_per_year (float): the number of days in the modelled year
+        passengers_per_year: The number of pasengers flying per year globally
+        days_per_year: the number of days in the modelled year
 
     """
+    # if not isinstance(passengers_per_year, float):
+    #     message = ("Argument passenger per year passed to fucntion `passengers per day` ")
+    #     raise TypeError(message)
+
     return passengers_per_year / days_per_year
 
 
 def required_global_fleet(
-    passengers_per_day, seats_per_aircraft, flights_per_aircraft_per_day
-):  # this function should take output of the prev funciton as a variable
+    passengers_per_day: float, seats_per_aircraft: float, flights_per_aircraft_per_day: float
+) -> float:
+    # this function should take output of the prev funciton as a variable
     """The size of the required global fleet.
 
     Args:
-        passengers_per_day (float): The number of passengers flying per day globally
-        seats_per_aircraft (float): The average number of seats in a commercial aircraft
-        flights_per_aircraft_per_day (float): The average number of flights a commercial aircraft
+        passengers_per_day: The number of passengers flying per day globally
+        seats_per_aircraft: The average number of seats in a commercial aircraft
+        flights_per_aircraft_per_day: The average number of flights a commercial aircraft
             makes a day
 
     """

@@ -7,7 +7,7 @@ requires-python = ">=3.12"
 dependencies = ["mkdocs-bibtex>=4.4.0"]
 
 [dependency-groups]
-dev = ["pre-commit>=4.2.0", "pytest>=8.4.1", "ruff>=0.12.3"]
+dev = ["mypy>=1.17.0", "pre-commit>=4.2.0", "pytest>=8.4.1", "ruff>=0.12.3"]
 
 docs = [
     "mkdocs-bibtex>=4.4.0",
@@ -20,6 +20,9 @@ docs = [
 [tool.ruff]
 line-length = 100
 
+[tool.mypy]
+mypy_path = "src"
+strict = true
 
 [tool.uv]
 default-groups = ["dev", "docs"]

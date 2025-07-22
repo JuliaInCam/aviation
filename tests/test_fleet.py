@@ -10,11 +10,13 @@ from aviation.fleet import passengers_per_day, required_global_fleet
         (732_000_000.0, 366, 2_000_000.0),
     ),
 )
-def test_passengers_per_day(passengers_per_year, days_per_year, expected_passengers_per_day):
+def test_passengers_per_day(
+    passengers_per_year: float, days_per_year: float, expected_passengers_per_day: float
+) -> None:
     assert passengers_per_day(passengers_per_year, days_per_year) == expected_passengers_per_day
 
 
-def test_required_global_fleet():
+def test_required_global_fleet() -> None:
     days_per_year = 365.0
     passengers_per_year = 5_000_000_000.0
     seats_per_aircraft = 200.0
@@ -28,3 +30,8 @@ def test_required_global_fleet():
         flights_per_aircraft_per_day,
     )
     assert result == pytest.approx(expected_required_global_fleet, abs=3_000.0)
+
+
+# def test_passengers_per_day_argument_types_correct():
+#    with pytest.raises(TypeError, match = "Argument `passengers_per_year` passed to `passengers_per_day` function must be an instance of class `float`"):
+#        passengers_per_day("365_000_000.0", 365.0)
