@@ -1,4 +1,5 @@
 def passengers_per_day(passengers_per_year, days_per_year):
+    """The number of passegers per day globally."""  # this is a doctring for making docs
     return passengers_per_year / days_per_year
 
 
