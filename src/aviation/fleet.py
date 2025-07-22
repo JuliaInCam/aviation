@@ -1,11 +1,18 @@
 """Modelling of the global fleet based on average passenger and aircraft data."""
 
+from aviation._model import transform
 
+
+@transform  # decorator does this passengers_per_day = transform (passengers_per_day)
 def passengers_per_day(passengers_per_year: float, days_per_year: float) -> float:
-    """The number of passegers per day globally.
+    # Any function name or argument is a unique indetifier within a modelling diagram.
+    # Function has arrows flowing into it. Argument of a function has arrows flowing out of it.
+    # These arent just function, we call them transfroms (because it adheres to the naming rules and
+    # connect with leaf nodes and other tranforms)
+    """The number of passengers per day globally.
 
     Args:
-        passengers_per_year: The number of pasengers flying per year globally
+        passengers_per_year: The number of passengers flying per year globally
         days_per_year: the number of days in the modelled year
 
     """
@@ -16,6 +23,7 @@ def passengers_per_day(passengers_per_year: float, days_per_year: float) -> floa
     return passengers_per_year / days_per_year
 
 
+@transform
 def required_global_fleet(
     passengers_per_day: float, seats_per_aircraft: float, flights_per_aircraft_per_day: float
 ) -> float:
