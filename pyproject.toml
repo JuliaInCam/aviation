@@ -24,12 +24,18 @@ line-length = 100
 default-groups = ["dev", "docs"]
 
 [tool.ruff.lint]
-select = ["B", "E", "F", "I", "N", "SIM", "T", "UP"]
+select = ["B", "D", "E", "F", "I", "N", "SIM", "T", "UP"]
 
-ignore = ["E501", "T201"]
+ignore = ["E501"]
 
 [tool.ruff.lint.per-file-ignores]
-"!src/**.py" = ["D"]
+"analysis/*" = ["T201"]
+#"!src/**.py" = ["D"]
+"tests/*" = ["D1"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
 
 [build-system]
 requires = ["uv_build>=0.8.0,<0.9.0"]
