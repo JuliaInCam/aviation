@@ -1,3 +1,5 @@
+"""Analysis to determine the required size of the global fleet."""
+
 # from aviation import passengers_per_day, required_global_fleet
 import aviation  # as a package
 
