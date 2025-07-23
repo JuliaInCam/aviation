@@ -1,9 +1,14 @@
 """Modelling of the global fleet based on average passenger and aircraft data. This is the source where actual formulas for models are defined as transforms."""
 
-from aviation._model import transform
+__all__ = ("passengers_per_day", "required_global_fleet")
+
+import camia_model as model
+
+# from aviation._model import transform
 
 
-@transform  # decorator does this passengers_per_day = transform (passengers_per_day),
+@model.transform
+# decorator does this passengers_per_day = transform (passengers_per_day),
 # establishes a unique ID name for this transform (the function, originally). Python in runtime will also identify it as a function, this is purely for being able to pass mypy checks
 def passengers_per_day(passengers_per_year: float, days_per_year: float) -> float:
     # Any function name or argument is a unique indetifier within a modelling diagram.
@@ -24,7 +29,7 @@ def passengers_per_day(passengers_per_year: float, days_per_year: float) -> floa
     return passengers_per_year / days_per_year
 
 
-@transform
+@model.transform
 def required_global_fleet(
     passengers_per_day: float, seats_per_aircraft: float, flights_per_aircraft_per_day: float
 ) -> float:
