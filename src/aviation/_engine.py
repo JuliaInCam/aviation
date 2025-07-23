@@ -1,7 +1,6 @@
 """systems_model = engine.SystemsModel(aviation.transforms).
 
 required_global_fleet = systems_model.evaluate (inputs, output)
-
 """
 
 import collections.abc
@@ -27,7 +26,7 @@ class SystemsModel:
             if transform.name == output:
                 break
         else:
-            # if we cannot find a tranform amtching the output , raise an error
+            # if we cannot find a tranform matching the output , raise an error
             message = f"No transform with name `{output}`."
             raise ValueError(message)
 
