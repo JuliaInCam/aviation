@@ -1,9 +1,10 @@
-"""Modelling of the global fleet based on average passenger and aircraft data."""
+"""Modelling of the global fleet based on average passenger and aircraft data. This is the source where actual formulas for models are defined as transforms."""
 
 from aviation._model import transform
 
 
-@transform  # decorator does this passengers_per_day = transform (passengers_per_day)
+@transform  # decorator does this passengers_per_day = transform (passengers_per_day),
+# establishes a unique ID name for this transform (the function, originally). Python in runtime will also identify it as a function, this is purely for being able to pass mypy checks
 def passengers_per_day(passengers_per_year: float, days_per_year: float) -> float:
     # Any function name or argument is a unique indetifier within a modelling diagram.
     # Function has arrows flowing into it. Argument of a function has arrows flowing out of it.

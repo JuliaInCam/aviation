@@ -13,6 +13,12 @@ Modules:
 __all__ = (
     "passengers_per_day",
     "required_global_fleet",
+    "transforms",
 )  # adding these functions to the name space
 
 from aviation.fleet import passengers_per_day, required_global_fleet
+
+transforms = (
+    passengers_per_day,
+    required_global_fleet,
+)  # tuple of transforms so it's easier to pass them all around together

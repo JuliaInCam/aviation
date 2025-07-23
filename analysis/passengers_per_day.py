@@ -1,4 +1,4 @@
-"""Analysis to determine the number of passengers per day globally."""
+"""Analysis to determine the number of passengers per day globally using models defined in `SRC/aviation`."""
 
 import aviation
 

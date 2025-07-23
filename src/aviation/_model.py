@@ -21,12 +21,14 @@ def transform[
     R,
     **P,
 ](  # R is regular type variable, but **P is special type that has args and kwards attributes
-    function: collections.abc.Callable[P, R],
-) -> Transform[R, P]:
+    function: collections.abc.Callable[P, R],  # the function is a callable
+) -> Transform[
+    R, P
+]:  # returns back a callable Transform c;lass that also has name and parameters attributes
     """Decorator to identify functions as tranforms."""
     transform = typing.cast("Transform[R, P]", function)
-    transform.name = function.__name__
+    transform.name = function.__name__  # setting the name which is the unique ID of this transform
     transform.parameters = tuple(
-        inspect.signature(function).parameters.keys()
+        inspect.signature(function).parameters.keys()  # parameters
     )  # will give me back the strings of parameter names of all of the parametes of my functionin a tuple
     return transform
