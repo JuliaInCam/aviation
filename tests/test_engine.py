@@ -1,7 +1,7 @@
+import camia_engine as engine
 import pytest
 
 import aviation
-from aviation import _engine as engine
 
 
 @pytest.fixture
@@ -21,7 +21,7 @@ def systems_model() -> engine.SystemsModel:
         ),
         (
             {
-                "passengers_per_day": 13_689_254,
+                "passengers_per_day": 13_689_254.0,
                 "days_per_year": 365.25,
                 "seats_per_aircraft": 200.0,
                 "flights_per_aircraft_per_day": 3.0,
